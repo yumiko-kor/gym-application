@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+    // 컴파일러 추가 -> 훨씬 간단하게 소스를 불러올 수 있음
+    "paths": {
+      "@/*" : ["./src/*"]
+    },
     "target": "ES2020",
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
