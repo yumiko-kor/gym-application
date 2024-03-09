@@ -1,3 +1,6 @@
+import Navbar from "@/scences.navbar";
+
+
 function App() {
 
   return (
