@@ -1,10 +1,24 @@
-import Navbar from "@/scences.navbar";
+import { useState } from "react";
+
+import Navbar from "@/scenes/navbar";
+
+enum SelectedPage {
+  Home = "home",
+  Benefits = "benefits",
+  OusClasees = "ourclasees",
+  CntextUs = "contextus"
+}
 
 
 function App() {
+  const [ selectedPage, setSelectedPage ] = useState<string>(SelectedPage.Home);
+
 
   return (
-    <div className="app">app</div>
+    <Navbar 
+      selectedPage={selectedPage}
+      setSelectedPage={setSelectedPage}
+    />
   )
 }
 
