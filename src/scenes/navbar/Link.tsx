@@ -13,7 +13,7 @@ const Link = ({
     selectedPage,
     setSelectedPage,
 }: Props) => {
-    // as == forced -> value 이걸 쓰라는 의미
+    // as == forced -> value 이걸 쓰라는 의미₩₩
     const lowerCasePage = page.toLocaleLowerCase().replace(/ /g, "") as SelectedPage;
 
     return (
